@@ -2,7 +2,7 @@
   "name": "goit-react-hw-08-v2-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sav-anna.github.io/sav-anna/goit-react-hw-08-v2-phonebook/",
+  "homepage": "https://sav-anna.github.io/goit-react-hw-08-v2-phonebook",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.5",

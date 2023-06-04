@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sav-anna/goit-react-hw-08-v2-phonebook/static/css/main.e40bf911.css",
+    "main.js": "/sav-anna/goit-react-hw-08-v2-phonebook/static/js/main.379d6bc1.js",
+    "index.html": "/sav-anna/goit-react-hw-08-v2-phonebook/index.html",
+    "main.e40bf911.css.map": "/sav-anna/goit-react-hw-08-v2-phonebook/static/css/main.e40bf911.css.map",
+    "main.379d6bc1.js.map": "/sav-anna/goit-react-hw-08-v2-phonebook/static/js/main.379d6bc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e40bf911.css",
+    "static/js/main.379d6bc1.js"
+  ]
+}

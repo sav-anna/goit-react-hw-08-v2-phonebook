@@ -1,8 +1,6 @@
 import { useDispatch } from 'react-redux';
 import css from './Page.module.css';
 import { login } from 'redux/auth/auth-operations';
-import { Navigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
@@ -16,12 +14,6 @@ export const LoginPage = () => {
         password: form.elements.password.value,
       })
     );
-    if (login.fulfilled) {
-      return <Navigate to="/contacts" replace />;
-      // Navigate('/contacts');
-    } else {
-      toast.warn('Please check your email address or password');
-    }
     form.reset();
   };
 

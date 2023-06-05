@@ -1,9 +1,6 @@
 import { useDispatch } from 'react-redux';
 import css from './Page.module.css';
-// import { useState } from 'react';
 import { register } from 'redux/auth/auth-operations';
-import { Navigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 
 export const RegisterPage = () => {
   const dispatch = useDispatch();
@@ -18,11 +15,6 @@ export const RegisterPage = () => {
         password: form.elements.password.value,
       })
     );
-    if (register.fulfilled) {
-      return <Navigate to="/contacts" replace />;
-    } else {
-      toast.warn('Please check your email address or password');
-    }
 
     form.reset();
   };
@@ -39,13 +31,11 @@ export const RegisterPage = () => {
             id="name"
             type="text"
             name="name"
-            // value={name}
             placeholder=" "
             minLength="6"
             maxLength="20"
             pattern="^[A-Za-z]+\s[A-Za-z]+$"
             title="Enter first and last name, only Latin letters"
-            // onChange={handleChange}
             required
           ></input>
           <label className={css.label} htmlFor="email">
@@ -56,9 +46,7 @@ export const RegisterPage = () => {
             id="email"
             type="email"
             name="email"
-            // value={email}
             placeholder=" "
-            // onChange={handleChange}
             required
           ></input>
           <label className={css.label} htmlFor="password">
@@ -69,9 +57,7 @@ export const RegisterPage = () => {
             id="password"
             name="password"
             type="password"
-            // value={password}
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            // onChange={handleChange}
             required
             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
           ></input>

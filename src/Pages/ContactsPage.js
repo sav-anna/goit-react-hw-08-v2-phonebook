@@ -7,6 +7,7 @@ import ContactList from 'components/Contact/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import { getIsLoggedIn } from 'redux/auth/auth-selectors';
 import css from './Page.module.css';
+
 export const ContactsPage = () => {
   const contacts = useSelector(getContacts);
   const isLoggedIn = useSelector(getIsLoggedIn);
